@@ -14,10 +14,16 @@
 <body>
     <!-- hero no lleva un container en el bloque ya que como vamos a cargar una imagen con efecto wave, queremos que la misma abarque el 100% -->
     <header class="hero">
-        <nav class="nav">
-            <a href="#sobre-mi" class="nav__items">Sobre mi</a>
-            <a href="#educacion-it" class="nav__items ">Educación</a>
-            <a href="#proyectos" class="nav__items nav__items--cta ">Proyectos</a>
+        <nav>
+            <figure>
+                <i class="fas fa-laptop-code"></i>
+                <p>PortFolio Jonathan Bolatti</p>
+            </figure>
+            <ul>
+                <li> <a href="#sobre-mi" class="nav__items">Sobre mi</a></li>
+                <li> <a href="#educacion-it" class="nav__items ">Educación</a></li>
+                <li> <a href="#proyectos" class="nav__items nav__items--cta ">Proyectos</a></li>
+            </ul>
         </nav>
         <!-- dentro de la clase container va a estar todo el contenido de la web para que no sobre pase
         el 90% de widthz -->
@@ -27,10 +33,11 @@
                 <!-- creamos un contenedor para manejar los textos -->
                 <div class="hero__texts">
                     <h2 class="hero__title--bienvenidos">Bienvenidos<span class="hero__symbol">!</span></h2>
-                    <h2 class="hero__title">Mi nombre es <span class="hero__title--nombre">Jonathan Bolatti</span><span class="hero__symbol-llave"> {</span></h2>
+                    <h2 class="hero__title">Mi nombre es <span class="hero__title--nombre">Jonathan Bolatti</span><span
+                            class="hero__symbol-llave"> {</span></h2>
                     <h1 class="hero__title--dev">Developer Full Stack: Junior;</h1>
                     <p class="hero__lem">/* Transformando ideas en realidades */</p>
-                    <div class="div"> 
+                    <div class="div">
                         <p class="hero__symbol-llave">}</p>
                         <!-- <p class="hero__symbol">}</p> -->
                         <a href="#" class="hero__cta btn--cta">Contáctame ahora</a>
@@ -55,46 +62,47 @@
                 trabajar en equipo, aceptar nuevos desafios y metas que me lleven a superarme dia a dia, abierto a
                 cualquier tipo de propuestas relacionado con en mundo del desarrollo .</p>
             <a href="assets/CV-jmb.pdf" target="_blank" class="btn btn--cyan">Descargar CV</a>
-       
+
         </section>
-       
+
         <section>
-            <div class="divisor-1" >
+            <div class="divisor-1">
                 <span class="divisor-1"></span>
             </div>
             <div class="about container">
                 <div class="about__texts">
                     <h2 id="skills" class="subtitle about--h2">Skills</h2>
                     <ul class="about__paragraph">
-                        <li><i class="fab fa-vuejs list-icon"></i> Backend : JAVA (Spring MVC, Spring Boot, Spring Security)</li>
+                        <li><i class="fab fa-vuejs list-icon"></i> Backend : JAVA (Spring MVC, Spring Boot, Spring
+                            Security)</li>
                         <li><i class="fab fa-vuejs list-icon"></i> Frontend : Thymelaf , HTML & CSS</li>
                         <li><i class="fab fa-vuejs list-icon"></i> Framework de persistencia: JPA</li>
                         <li><i class="fab fa-vuejs list-icon"></i> DB : MySQL</li>
                         <li><i class="fab fa-vuejs list-icon"></i> Otros : GitHub.</li>
                         <li><i class="fab fa-vuejs list-icon"></i> Metodologias Agiles (Kamban, Scrum)</li>
-                        </ul>
-                    </div>
-                    <figure class="about__img">
-                        <img src="assets/mockup-port.jpg" class="about__picture">
-                    </figure>
-                    <figure class="about__img about__img--left">
-                        <img src="assets/undraw_developer_activity_bv83.svg" class="about__picture">
-                    </figure>
-                    
-                    <div class="about__texts">
-                        <h2 class="subtitle about--h2">Hobbies</h2>
-                        <p class="about__paragraph">Practico Padel como deporte Principal a nivel amateur, tambien me gusta
-                            mucho la pesca, y todo tipo de actividades que estan relacionadas con el aire libre. Como
-                            pasatiempo,
-                            me gusta fabricar todo tipo de artesanias o muebles con madera de descarte (pallets)
-                        </p>
-                        
-                    </div>
+                    </ul>
                 </div>
+                <figure class="about__img">
+                    <img src="assets/mockup-port.jpg" class="about__picture">
+                </figure>
+                <figure class="about__img about__img--left">
+                    <img src="assets/undraw_developer_activity_bv83.svg" class="about__picture">
+                </figure>
+
+                <div class="about__texts">
+                    <h2 class="subtitle about--h2">Hobbies</h2>
+                    <p class="about__paragraph">Practico Padel como deporte Principal a nivel amateur, tambien me gusta
+                        mucho la pesca, y todo tipo de actividades que estan relacionadas con el aire libre. Como
+                        pasatiempo,
+                        me gusta fabricar todo tipo de artesanias o muebles con madera de descarte (pallets)
+                    </p>
+
+                </div>
+            </div>
         </section>
 
         <section id="proyectos" class="projects">
-            <div class="divisor-2" >
+            <div class="divisor-2">
                 <span class="divisor-2"></span>
             </div>
             <div class="container">
@@ -106,7 +114,7 @@
                             <img src="assets/img1.png" class="projects__img">
                             <!-- efecto que se mosytrara cuando pasemos el mouse por encima -->
                             <div class="projects__hover">
-                                <h2 class="projects__titile">Ir al Proyecto</h2>
+                                <h2 class="projects__titile">Abrir Proyecto</h2>
                                 <!-- Agregamos un icono en la siguiente clase -->
                                 <i class="far fa-file-alt projects__icon"></i>
                             </div>
@@ -118,7 +126,7 @@
                             <img src="assets/img2.png" class="projects__img">
                             <!-- efecto que se mostrara cuando pasemos el mouse por encima -->
                             <div class="projects__hover">
-                                <h2 class="projects__titile">Ir al Proyecto</h2>
+                                <h2 class="projects__titile">Abrir Proyecto</h2>
                                 <!-- Agregamos un icono en la siguiente clase -->
                                 <i class="far fa-file-alt projects__icon"></i>
                             </div>
@@ -130,7 +138,7 @@
                             <img src="assets/img3.png" class="projects__img">
                             <!-- efecto que se mosytrara cuando pasemos el mouse por encima -->
                             <div class="projects__hover">
-                                <h2 class="projects__titile">Ir al Proyecto</h2>
+                                <h2 class="projects__titile">Abrir Proyecto</h2>
                                 <!-- Agregamos un icono en la siguiente clase -->
                                 <i class="far fa-file-alt projects__icon"></i>
                             </div>
@@ -142,7 +150,7 @@
                             <img src="assets/img4.png" class="projects__img">
                             <!-- efecto que se mosytrara cuando pasemos el mouse por encima -->
                             <div class="projects__hover">
-                                <h2 class="projects__titile">Ir al Proyecto</h2>
+                                <h2 class="projects__titile">Abrir Proyecto</h2>
                                 <!-- Agregamos un icono en la siguiente clase -->
                                 <i class="far fa-file-alt projects__icon"></i>
                             </div>
@@ -154,94 +162,105 @@
 
         <!-- todo el bloque donde cuento sobre mi -->
         <section id="educacion-it">
-             <div class="divisor-3" >
+            <div class="divisor-3">
                 <span class="divisor-3"></span>
             </div>
 
             <div class="testimony container">
 
                 <h2 class="testimony__subtitle">Educación it</h2>
-                
+
                 <div class="testimony__grid">
                     <article class="testimony__item">
-                    <div class="testimony__person">
-                        <img src="assets/digital-house.png" class="testimony__img">
-                        <div class="testimony__text">
-                            <h3 class="testimony__name">Certified Tech Developer</h3>
-                            <p class="testimony__verification"> From MercadoLibre & Globant by Digital House (en curso)
-                            </p>
+                        <div class="testimony__person">
+                            <img src="assets/digital-house.png" class="testimony__img">
+                            <div class="testimony__text">
+                                <h3 class="testimony__name">Certified Tech Developer</h3>
+                                <p class="testimony__verification"> From MercadoLibre & Globant by Digital House (en
+                                    curso)
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <p class="testimomy__review">Programa:</p><br>
-                    <ul class="testimomy__review">
-                        <li><span>Fundamentos:</span> Manejo de terminales, lenguajes imperativos (Javascrip),
-                            Programacion orientada
-                            a objetos (Java)</li>
+                        <p class="testimomy__review">Programa:</p><br>
+                        <ul class="testimomy__review">
+                            <li><span>Fundamentos:</span> Manejo de terminales, lenguajes imperativos (Javascrip),
+                                Programacion orientada
+                                a objetos (Java)</li>
                             <li><span> Soft Skill Trainings:</span> learning agility, colaboración y trabajo en equipo,
                                 gestión del tiempo, comunicación efectiva y
                                 posicionamiento profesiona</li>
-                        <li><span> Infraestructura:</span> soluciónes tecnológica, las alternativas, sus costos,
-                            escalabilidad y
-                            mantenimiento</li>
+                            <li><span> Infraestructura:</span> soluciónes tecnológica, las alternativas, sus costos,
+                                escalabilidad y
+                                mantenimiento</li>
                             <li><span> Calidad:</span> test funcionales, tests no funcionales y automatización.</li>
-                        <li><span>Base de datos:</span> relacionales (SQL) y no relacionales teniendo en cuenta el marco
-                            teórico y el
-                            diseño de las mismas.</li>
+                            <li><span>Base de datos:</span> relacionales (SQL) y no relacionales teniendo en cuenta el
+                                marco
+                                teórico y el
+                                diseño de las mismas.</li>
                             <li><span>Talleres Técnicos:</span> metodologías de trabajo (metodologías
                                 ágiles entre otras), design thinking, UX y UI, Data
-                            Analytics y gestión de producto digital</li>
+                                Analytics y gestión de producto digital</li>
                             <li><span>Back End:</span> trabajaremos en Java incluyendo Spring para la
-                            creación de este backend presentando el patrón de
-                            diseño MVC cómo guía principal.</li>
-                        <li><span>Front End:</span> A lo largo de esta tematica de un sitio web en HTML y CSS. A su vez
-                            se incorporará Javascript cómo lenguaje de
-                            scripting permitiendo que el sitio web responda de
-                            manera interactiva y dinámica.</li>
+                                creación de este backend presentando el patrón de
+                                diseño MVC cómo guía principal.</li>
+                            <li><span>Front End:</span> A lo largo de esta tematica de un sitio web en HTML y CSS. A su
+                                vez
+                                se incorporará Javascript cómo lenguaje de
+                                scripting permitiendo que el sitio web responda de
+                                manera interactiva y dinámica.</li>
                         </ul>
-                </article>
-                
-                <article class="testimony__item">
-                    <div class="testimony__person">
-                        <img src="assets/logo-eggtech.png" class="testimony__img">
-                        <div class="testimony__text">
-                            <h3 class="testimony__name">Programador Web Full Stack</h3>
-                            <p class="testimony__verification">Egg Educación - Finalizado - (nov 2020 - oct 2021)</p>
+                    </article>
+
+                    <article class="testimony__item">
+                        <div class="testimony__person">
+                            <img src="assets/logo-eggtech.png" class="testimony__img">
+                            <div class="testimony__text">
+                                <h3 class="testimony__name">Programador Web Full Stack</h3>
+                                <p class="testimony__verification">Egg Educación - Finalizado - (nov 2020 - oct 2021)
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                    <p class="testimomy__review">Conocimientos adquiridos:</p><br>
-                    <ul class="testimomy__review">
-                        <li><span>Fundamentos de la programacion</span> Algoritmo, Características, Identificadores, Variables y constantes. Declaración.
-                            Estructuras de control, Condicionales anidados. Estructuras repetitivas.</li>
-                            <li><span>JAVA: programacion orientada a objetos: </span> Clases y objetos, Elementos de una clase. Atributos. 
-                                Constructores. Métodos. Abstracción. Encapsulamiento. Modificadores de 
-                            acceso, métodos estáticos, Atributos finales.
-                            Colecciones. Listas, conjuntos y mapas.
-                            Relaciones entre clases. Uso. Composición. Herencia. Modificadores de 
-                            clases y métodos.
-                            Excepciones. Manejador de excepciones. Jerarquía </li>
-                            <li><span>Base de datos relacional:</span> MySQL- lenguaje de consulta estructurado: SQL <br>JPA. JPQL. Arquitectura JPA. Mapeo con anotaciones. Las relaciones. JPA y 
+                        <p class="testimomy__review">Conocimientos adquiridos:</p><br>
+                        <ul class="testimomy__review">
+                            <li><span>Fundamentos de la programacion</span> Algoritmo, Características, Identificadores,
+                                Variables y constantes. Declaración.
+                                Estructuras de control, Condicionales anidados. Estructuras repetitivas.</li>
+                            <li><span>JAVA: programacion orientada a objetos: </span> Clases y objetos, Elementos de una
+                                clase. Atributos.
+                                Constructores. Métodos. Abstracción. Encapsulamiento. Modificadores de
+                                acceso, métodos estáticos, Atributos finales.
+                                Colecciones. Listas, conjuntos y mapas.
+                                Relaciones entre clases. Uso. Composición. Herencia. Modificadores de
+                                clases y métodos.
+                                Excepciones. Manejador de excepciones. Jerarquía </li>
+                            <li><span>Base de datos relacional:</span> MySQL- lenguaje de consulta estructurado: SQL
+                                <br>JPA. JPQL. Arquitectura JPA. Mapeo con anotaciones. Las relaciones. JPA y
                                 JDBC</li>
-                                <li><span>Programacion web full stack:</span>Fundamentos WEB.
-                                    Spring framework. Configuración. Spring MVC. Spring boot.
-                            Programación en capas. 
-                            Capa de Interfaz. HTML, CSS. Thymeleaf.mIntegración con 
-                            Spring MVC.
-                            Capa de acceso a datos: Entidades y repositorios. 
-                            Capa de comunicación. Controladores. Capa de servicios. 
-                            Desarrollo de proyecto desde cero: Inicio, Login y Registro. Validar 
-                            formularios. Guardar imágenes. Recuperar y utilizar información de la sesión. 
-                            Mostrar combos en pantalla. Configurar Spring Security. </li>
-                            <li><span>PROYECTO FINAL: integracion de todas las etapas, con un proyecto de autoria propia.</span> </li>
-                    </ul>
-                    
-                </article>
+                            <li><span>Programacion web full stack:</span>Fundamentos WEB.
+                                Spring framework. Configuración. Spring MVC. Spring boot.
+                                Programación en capas.
+                                Capa de Interfaz. HTML, CSS. Thymeleaf.mIntegración con
+                                Spring MVC.
+                                Capa de acceso a datos: Entidades y repositorios.
+                                Capa de comunicación. Controladores. Capa de servicios.
+                                Desarrollo de proyecto desde cero: Inicio, Login y Registro. Validar
+                                formularios. Guardar imágenes. Recuperar y utilizar información de la sesión.
+                                Mostrar combos en pantalla. Configurar Spring Security. </li>
+                            <li><span>PROYECTO FINAL: integracion de todas las etapas, con un proyecto de autoria
+                                    propia.</span> </li>
+                        </ul>
+
+                    </article>
+                </div>
             </div>
-        </div>
         </section>
     </main>
     <footer class="footer">
+        <div class="divisor-4">
+            <span class="divisor-4"></span>
+        </div>
         <div class="container footer__grid">
-            <nav class="nav nav--footer">
+            <nav class="nav--footer">
                 <a class="nav__items nav__items--footer" href="">Inicio</a>
                 <a class="nav__items nav__items--footer" href="#sobre_mi">Sobre Mi</a>
                 <a class="nav__items nav__items--footer" href="#skills">Mis Skills</a>
@@ -250,7 +269,7 @@
             <section class="footer__contact">
                 <h3 class="footer__title">Contáctame</h3>
                 <div class="footer__icons">
-                    
+
                     <span class="footer__container-icons">
                         <a class="fab fa-whatsapp footer__icon" href="https://wa.me/5493585131021" target="_blank"></a>
                     </span>
@@ -271,12 +290,12 @@
                     </span>
                 </div>
             </section>
-            
+
         </div>
         <div class="developer-from">
-            <p>JONATHAN BOLATTI</p>
+            <p class="titulo-final"> Softech Desing &copy; 2021 | Jonathan Bolatti</p>
         </div>
-       
+
     </footer>
 
     <script src="https://kit.fontawesome.com/5208273844.js" crossorigin="anonymous"></script>

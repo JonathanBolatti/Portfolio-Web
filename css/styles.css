@@ -1,6 +1,11 @@
 /* PAGINA HECHA CON CSS FLEX BOX Y CSS GRID TRABAJANDO CONJUNTAMENTE  */
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300;400;700;800&family=Bungee+Outline&family=Londrina+Outline&display=swap');
+
+
+
 
 :root {
     /*VARIABLES DEFINIDAS*/
@@ -8,7 +13,7 @@
     --background2: linear-gradient(135deg, #645b5bdc 0%, #05000931 100%);
 
     --color-primary: #008ef9;
-    --color-black1: #000000;
+    --color-black1: #0000006b;
     --color-black2: #121212;
     --color-cyan: #09f7ff;
     --color-orange: #ffa100;
@@ -68,22 +73,50 @@ body {
 
 
 /* MENU NAV */
-.nav {
+nav {
     display: flex;
-    /*flex-end = para que todos los elementos se vayan al final del contenedor en el eje horizontal */
     justify-content: flex-end;
     width: 100%;
     height: 85px;
     align-items: center;
     font-weight: 700;
     background-color: var(--color-black1);
+    justify-content: space-between;
 }
 
-.nav--footer {
-    font-weight: 300;
-    justify-content: flex-start;
-    padding: auto 20px;
+nav p {
+    color: var(--color-cyan);
+    margin-left: 20px;
 }
+
+figure {
+    display: flex;
+    align-items: center;
+}
+
+nav figure i {
+    color: var(--color-cyan);
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+nav ul li {
+    display: inline-flex;
+    font-weight: 600;
+    list-style: none;
+}
+
+
+ul li a {
+    align-items: center;
+    color: var(--color-white);
+    text-decoration: none;
+    padding: 10px 20px 10px 0px;
+    font-weight: inherit;
+    margin-right: 10px;
+}
+
+
 
 .nav__items {
     color: #fff;
@@ -128,6 +161,8 @@ body {
 .hero__texts {
     width: 90%;
     margin-bottom: 80px;
+    font-family: 'Londrina Outline', cursive;
+
 }
 
 .hero__title--bienvenidos {
@@ -152,11 +187,15 @@ body {
     margin-left: 20px;
     color: var(--color-cyan);
     text-shadow: 0 0 7px #03f7ff, 0 0 10px #03f7ff;
+    /* font-family: 'Bungee Outline', cursive; */
+
+
+
 }
 
 .hero__lem {
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 600;
     margin: 15px 0;
     text-transform: uppercase;
     color: var(--color-white);
@@ -218,6 +257,7 @@ body {
 .btn--cta {
     border-color: #03f7ff;
     color: #03f7ff;
+    font-family: 'Raleway', sans-serif;
 }
 
 .btn--cta:hover {
@@ -437,6 +477,7 @@ dando como un efecto de tipo collage */
     height: 100%;
     /* funcion para que todo lo que salga del contenedor se oculte */
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .projects__img {
@@ -452,7 +493,7 @@ dando como un efecto de tipo collage */
 .projects__hover {
     /* funcion para que se posicione dentro de su padre */
     position: absolute;
-    background: hsla(214, 100%, 50%, 0.563);
+    background-color: hsla(75, 100%, 50%, 0.748);
     top: 0%;
     left: 0%;
     width: 100%;
@@ -494,7 +535,7 @@ dando como un efecto de tipo collage */
 }
 
 .testimony__subtitle {
-    color: var(--color-primary);
+    color: var(--color-rose);
     font-size: 2.5rem;
     margin-bottom: 55px;
     text-align: center;
@@ -515,11 +556,12 @@ dando como un efecto de tipo collage */
     margin: 0 auto;
     background: var(--color-secondary);
     /* funcion para generar  efecto sombra sombras en las box  */
-    box-shadow: 10px 15px 7px rgba(66, 66, 66, 1);
-    border-radius: 7px;
+    border-radius: 10px;
     padding: 35px 25px;
     color: #fff;
     margin-bottom: 50px;
+    border: 2px solid var(--color-rose);
+    opacity: 0.9;
 
 }
 
@@ -538,7 +580,7 @@ dando como un efecto de tipo collage */
     object-position: top;
     border-radius: 50%;
     border: 3px solid #fff;
-    box-shadow: 0px 0px 6px 2px #ffff;
+    box-shadow: 0px 0px 6px 2px var(--color-rose);
     margin-right: 30px;
 }
 
@@ -568,7 +610,22 @@ dando como un efecto de tipo collage */
 
 /* FOOTER */
 
+.divisor-4 {
+    background-color: #131312;
+    background-image: linear-gradient(90deg, #131312 0%, #d21bc3 69%, #fc00ff 100%);
+    width: 100%;
+    height: 60px;
+    position: relative;
+}
+
 .footer {
+    background-color: #000000;
+}
+ nav.nav--footer {
+    font-weight: 300;
+    justify-content: flex-start;
+    padding: auto 20px;
+    margin-left: 20px;
     background-color: var(--color-black1);
 }
 
@@ -615,7 +672,7 @@ dando como un efecto de tipo collage */
     line-height: 60px;
 }
 
-.developer-from{
+.developer-from {
     display: flex;
     align-items: center;
     background-color: var(--color-black2);
@@ -623,11 +680,14 @@ dando como un efecto de tipo collage */
     height: 40px;
     border-top: 1px solid var(--color-cyan);
 }
-.developer-from p{
+
+.developer-from p {
     display: inline-block;
     text-align: center;
     color: var(--color-cyan);
-    margin:auto;
+    margin: auto;
+    opacity: 0.9;
+    font-size: 1rem;
 }
 
 /* Responsive desing */
