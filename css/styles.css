@@ -5,12 +5,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam:wght@300;400;700;800&family=Bungee+Outline&family=Londrina+Outline&display=swap');
 
 
-
-
 :root {
     /*VARIABLES DEFINIDAS*/
     --background: linear-gradient(135deg, #727070e7 0%, #050009a3 100%);
     --background2: linear-gradient(135deg, #645b5bdc 0%, #05000931 100%);
+    --background-secondary: rgba(255, 255, 255, .1);
+    --boton-padding: 20px 40px;
 
     --color-primary: #008ef9;
     --color-black1: #0000006b;
@@ -21,17 +21,17 @@
     --color-rose: #FC00FF;
     --color-magenta: #e5097f;
     --color-white: #fff;
+}
 
-
-
-    --background-secondary: rgba(255, 255, 255, .1);
-    --boton-padding: 20px 40px;
+* {
+    margin: 0;
+    box-sizing: border-box;
 }
 
 body {
     font-family: 'Raleway', sans-serif;
     text-rendering: optimizeLegibility;
-    background-color: #121212;
+    background-color: var(--color-black2);
 
 }
 
@@ -84,6 +84,11 @@ nav {
     justify-content: space-between;
 }
 
+nav label,
+input {
+    display: none;
+}
+
 nav p {
     color: var(--color-cyan);
     margin-left: 20px;
@@ -104,6 +109,7 @@ nav ul li {
     display: inline-flex;
     font-weight: 600;
     list-style: none;
+
 }
 
 
@@ -111,13 +117,22 @@ ul li a {
     align-items: center;
     color: var(--color-white);
     text-decoration: none;
-    padding: 10px 20px 10px 0px;
     font-weight: inherit;
-    margin-right: 10px;
+    margin-right: 20px;
+    padding: 10px 15px;
+    white-space: nowrap;
+    border-radius: 6px;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+  
 }
 
-
-
+.nav__items--cta {
+    border: 2px solid var(--color-cyan);
+    color: var(--color-white);
+    border-radius: 6px;
+    padding: 10px 40px;
+}
 .nav__items {
     color: #fff;
     text-decoration: none;
@@ -129,15 +144,6 @@ ul li a {
     transition: all 300ms ease-in-out;
 }
 
-
-
-.nav__items--cta {
-    border: 2px solid var(--color-cyan);
-    color: var(--color-white);
-    border-radius: 10px;
-    padding: 10px 40px;
-}
-
 .nav__items-footer {
     padding: 10px;
 }
@@ -146,8 +152,10 @@ ul li a {
 .nav__items:hover {
     box-shadow: 0 0 10px 0 #03f7ff inset, 0 0 10px 4px #03f7ff;
     text-shadow: 0 0 7px #03f7ff, 0 0 10px #03f7ff;
-
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
+
+
 
 /* HERO TEXTOS */
 .hero__container {
@@ -171,14 +179,15 @@ ul li a {
     line-height: 1.5em;
     color: var(--color-white);
     text-transform: uppercase;
-    text-shadow: 0 0 7px var(--color-magenta), 0 0 10px var(--color-magenta);
+    text-shadow: 0 0 7px var(--color-rose), 0 0 10px var(--color-rose);
 }
 
 
 .hero__title {
     font-size: 2rem;
     color: var(--color-white);
-    text-shadow: 0 0 7px var(--color-magenta), 0 0 10px var(--color-magenta);
+    text-shadow: 0 0 7px var(--color-rose), 0 0 10px var(--color-rose);
+
 }
 
 .hero__title--nombre {
@@ -199,14 +208,16 @@ ul li a {
     margin: 15px 0;
     text-transform: uppercase;
     color: var(--color-white);
-    text-shadow: 0 0 7px var(--color-magenta), 0 0 10px var(--color-magenta);
+    text-shadow: 0 0 7px var(--color-rose), 0 0 10px var(--color-rose);
+
 }
 
 .hero__title--dev {
     font-size: 2rem;
     line-height: 2.5;
     color: var(--color-white);
-    text-shadow: 0 0 7px var(--color-magenta), 0 0 10px var(--color-magenta);
+    text-shadow: 0 0 7px var(--color-rose), 0 0 10px var(--color-rose);
+
 }
 
 .div {
@@ -217,7 +228,8 @@ ul li a {
 .hero__symbol {
     color: var(--color-white);
     font-size: 2.5rem;
-    text-shadow: 0 0 7px var(--color-magenta), 0 0 10px var(--color-magenta);
+    text-shadow: 0 0 7px var(--color-rose), 0 0 10px var(--color-rose);
+
 
 }
 
@@ -225,12 +237,10 @@ ul li a {
     color: var(--color-white);
     font-size: 80px;
     font-weight: 700;
-    text-shadow: 0 0 7px var(--color-magenta), 0 0 10px var(--color-magenta);
-
+    text-shadow: 0 0 7px var(--color-rose), 0 0 10px var(--color-rose);
+    margin-left: 10px;
 
 }
-
-
 
 .hero__cta {
 
@@ -267,11 +277,6 @@ ul li a {
 }
 
 
-
-
-
-
-
 /* config efecto wave */
 .hero__wave {
     /* para que se posicione dentro de su padre */
@@ -301,8 +306,6 @@ ul li a {
 .presentation {
     padding-top: 5%;
     padding-bottom: 5%;
-
-    /* todos los elementos se centran */
     text-align: center;
 }
 
@@ -311,7 +314,6 @@ ul li a {
     height: 200px;
     border-radius: 50%;
     margin-bottom: 10px;
-    /* se aplica para que la img no pierda calidad */
     object-fit: cover;
     object-position: top;
     border: 3px solid var(--color-cyan);
@@ -345,9 +347,11 @@ ul li a {
     text-transform: uppercase;
     text-decoration: none;
     transition: all .3s ease-in-out;
+    margin-left: 10px;
 }
 
 .btn--cyan {
+    line-height: 1.5;
     border-color: #03f7ff;
     color: #03f7ff;
 }
@@ -357,10 +361,6 @@ ul li a {
     color: #fff;
     text-shadow: 0 0 7px #03f7ff, 0 0 10px #03f7ff;
 }
-
-
-
-
 
 
 /* configurar el about container */
@@ -383,6 +383,7 @@ ul li a {
 
 .about__img {
     text-align: center;
+    justify-content: center;
 }
 
 .about__img--left {
@@ -413,38 +414,6 @@ ul li i.list-icon {
 
 /* SECTION PROJETS */
 
-/* en esta opcion comentada podemos armar nuestra tabla para que las imagenes ocupen diferentes tamaños
-dando como un efecto de tipo collage */
-/* 
-.projects__grid {
-    display: grid;
-    height: 550px;
-    grid-template-areas:
-    "img2 img2 img1 img4"
-    "img2 img2 img3 img3";
-    gap: 10px;
-}
-
-.projects__items:nth-of-type(2) {
-    grid-area: img2;
-}
-
-.projects__items:nth-of-type(1) {
-    grid-area: img1;
-}
-
-.projects__items:nth-of-type(4) {
-    grid-area: img4;
-}
-
-.projects__items:nth-of-type(3) {
-    grid-area: img3;
-}
-
-.projects__hover {
-    position: absolute;
-} */
-
 
 /* DIVISOR */
 
@@ -460,22 +429,48 @@ dando como un efecto de tipo collage */
     color: var(--color-yellow);
 }
 
+/* en esta opcion comentada podemos armar nuestra tabla para que las imagenes ocupen diferentes tamaños
+dando como un efecto de tipo collage */
+
 .projects__grid {
     display: grid;
     height: 550px;
-    /* funcion con la cual podemos armar nuestra tabla */
     grid-template-areas:
-        "img1 img2"
-        "img3 img4";
-    /* margen entre las "celdas" de la tabla */
+        "web1 web1 web2 web3"
+        "web1 web1 web4 web4"
+        "web5 web5 web4 web4";
     gap: 10px;
+}
+
+
+.projects__items:nth-of-type(1) {
+    grid-area: web1;
+}
+
+.projects__items:nth-of-type(2) {
+    grid-area: web2;
+}
+
+.projects__items:nth-of-type(3) {
+    grid-area: web3;
+}
+
+.projects__items:nth-of-type(4) {
+    grid-area: web4;
+}
+
+.projects__items:nth-of-type(5) {
+    grid-area: web5;
+}
+
+.projects__items:nth-of-type(6) {
+    grid-area: web6;
 }
 
 .projects__items {
     position: relative;
     width: 100%;
     height: 100%;
-    /* funcion para que todo lo que salga del contenedor se oculte */
     overflow: hidden;
     border-radius: 10px;
 }
@@ -483,15 +478,12 @@ dando como un efecto de tipo collage */
 .projects__img {
     width: 100%;
     height: 100%;
-    /* funcion para que se ajuste al elemento */
-    object-fit: cover;
-    /* funcion para que se aparezca la manito al pasar por arriba de la img */
+    object-fit: fill;
     cursor: pointer;
 
 }
 
 .projects__hover {
-    /* funcion para que se posicione dentro de su padre */
     position: absolute;
     background-color: hsla(75, 100%, 50%, 0.748);
     top: 0%;
@@ -621,12 +613,49 @@ dando como un efecto de tipo collage */
 .footer {
     background-color: #000000;
 }
- nav.nav--footer {
+
+nav.nav--footer {
     font-weight: 300;
     justify-content: flex-start;
     padding: auto 20px;
     margin-left: 20px;
     background-color: var(--color-black1);
+}
+
+.nav--footer ul {
+    text-align: center;
+    padding: 0;
+}
+
+.nav--footer li {
+    padding: 10px 5px 0;
+}
+
+.nav--footer p {
+    text-align: center;
+    margin: 0px auto 20px;
+    padding: 0;
+    font-weight: 400;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.nav--footer ul li a {
+    display: inline-block;
+    align-items: center;
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 300;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    transition: all .3s ease-in-out;
+}
+
+.nav--footer ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 7px #03f7ff, 0 0 10px #03f7ff;
+
 }
 
 .footer__grid {
@@ -650,6 +679,7 @@ dando como un efecto de tipo collage */
     justify-content: space-evenly;
 }
 
+
 .footer__container-icons {
     display: inline-block;
     width: 60px;
@@ -658,7 +688,15 @@ dando como un efecto de tipo collage */
     text-align: center;
     border: 1px solid #fff;
     border-radius: 50%;
+    transition: all .5s ease-in-out;
 }
+
+.footer__container-icons:hover {
+    background-color: rgba(255, 255, 255, .2);
+    color: #fff;
+    text-shadow: 0 0 7px #03f7ff, 0 0 10px #03f7ff;
+}
+
 
 .footer__icon {
     color: inherit;
@@ -705,18 +743,57 @@ dando como un efecto de tipo collage */
             --boton-padding: 15px 40px;
         }
 
+        /* MENU HAMBURGER */
+        .nav-label {
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            align-items: center;
+            position: fixed;
+            top: 100px;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: var(--color-black2);
+            clip-path: circle(0 at center);
+            transition: clip-path 1s ease-in-out;
+
+        }
+
+        .nav-input:checked+ul {
+            clip-path: circle(100% at center);
+        }
+
+        li a {
+            transition: 0.8s all;
+
+        }
+
+        li a:hover {
+            color: var(--color-cyan);
+
+        }
+
         .nav {
             justify-content: space-around;
         }
 
         .nav__items--cta {
             border: none;
+            padding: 10px 15px;
+
         }
 
         .nav__items {
             font-weight: 400;
-            border-bottom: 1px solid #fff;
+            border-bottom: 1px solid var(--color-cyan);
             margin-right: 0;
+            border-radius: 0;
         }
 
         .nav__items--footer {
@@ -770,26 +847,36 @@ dando como un efecto de tipo collage */
         .projects__grid {
             height: 100%;
             grid-template-areas:
-                "img1 img1 img1 img1"
-                "img2 img2 img2 img2"
-                "img3 img3 img3 img3"
-                "img4 img4 img4 img4";
+                "web1 web1 web1 web1"
+                "web2 web2 web2 web2"
+                "web3 web3 web3 web3"
+                "web4 web4 web4 web4"
+                "web5 web5 web5 web5";
         }
 
+
         .projects__items:nth-of-type(1) {
-            grid-area: img1;
+            grid-area: web1;
         }
 
         .projects__items:nth-of-type(2) {
-            grid-area: img2;
+            grid-area: web2;
         }
 
         .projects__items:nth-of-type(3) {
-            grid-area: img3;
+            grid-area: web3;
         }
 
         .projects__items:nth-of-type(4) {
-            grid-area: img4;
+            grid-area: web4;
+        }
+
+        .projects__items:nth-of-type(5) {
+            grid-area: web5;
+        }
+
+        .projects__items:nth-of-type(6) {
+            grid-area: web6;
         }
 
         /* TESTIMONY */
