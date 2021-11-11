@@ -124,7 +124,7 @@ ul li a {
     border-radius: 6px;
     -webkit-transition: all 300ms ease-in-out;
     transition: all 300ms ease-in-out;
-  
+
 }
 
 .nav__items--cta {
@@ -133,6 +133,7 @@ ul li a {
     border-radius: 6px;
     padding: 10px 40px;
 }
+
 .nav__items {
     color: #fff;
     text-decoration: none;
@@ -395,6 +396,29 @@ ul li a {
     que seria una celda de la funsion grid que es de una fraccion */
     max-width: 80%;
 }
+
+/* SKILL LOGOS */
+
+.skills__logos {
+    display: inline-block;
+    position: absolute;
+    width: 350px;
+    margin: 0 auto 20px;
+}
+
+.skill__logo {
+    width: 80px;
+    height: 60px;
+    border: 1px solid var(--color-orange);
+    box-shadow: 0 0 10px 1px var(--color-orange);
+    border-radius: 10px;
+    align-content: center;
+    object-fit: fill;
+
+}
+
+
+
 
 .about__paragraph {
     margin-bottom: 20px;
@@ -736,226 +760,288 @@ nav.nav--footer {
         height: 100%;
     }
 
-    @media screen and (max-width: 800px) {
+    .skills__logos {
+        width: 300px;
+        margin-top: 10px;
+    }
 
-        /* NAV */
-        :root {
-            --boton-padding: 15px 40px;
+    .skill__logo {
+        width: 70px;
+        height: 55px;
+
+    }
+
+    @media screen and (max-width: 1100px) {
+
+        .skills__logos {
+            width: 250px;
+            margin-top: 10px;
         }
 
-        /* MENU HAMBURGER */
-        .nav-label {
-            display: inline-block;
-            cursor: pointer;
+        .skill__logo {
+            width: 50px;
+            height: 45px;
         }
 
-        ul {
-            display: flex;
-            justify-content: space-evenly;
-            flex-direction: column;
-            align-items: center;
-            position: fixed;
-            top: 100px;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: var(--color-black2);
-            clip-path: circle(0 at center);
-            transition: clip-path 1s ease-in-out;
+        @media screen and (max-width: 800px) {
 
-        }
-
-        .nav-input:checked+ul {
-            clip-path: circle(100% at center);
-        }
-
-        li a {
-            transition: 0.8s all;
-
-        }
-
-        li a:hover {
-            color: var(--color-cyan);
-
-        }
-
-        .nav {
-            justify-content: space-around;
-        }
-
-        .nav__items--cta {
-            border: none;
-            padding: 10px 15px;
-
-        }
-
-        .nav__items {
-            font-weight: 400;
-            border-bottom: 1px solid var(--color-cyan);
-            margin-right: 0;
-            border-radius: 0;
-        }
-
-        .nav__items--footer {
-            border: none;
-        }
-
-        /* HERO TEXTS  */
-        .hero__texts {
-            width: 100%;
-            margin-bottom: 80px;
-        }
-
-        .hero__title {
-            font-size: 2.2rem;
-        }
-
-        .hero__subtitle {
-            font-size: 1.5rem;
-            font-weight: 300;
-            margin: 15px 0;
-        }
-
-        /* ABOUST  */
-
-        .presentation__copy {
-            width: 100%;
-        }
-
-        .about {
-            grid-template-columns: 1fr;
-        }
-
-        .about.container {
-            padding: 10px;
-        }
-
-        .about__img--left {
-            text-align: center;
-        }
-
-        /* esta es una funcion que podemos utulizar cuando al hacer responsi la web nos puede quedar dos cajas
-    de imagenes o textos juntas, entonces con grid-row invertimos el numero de la celda!  */
-        .about__texts:last-child {
-            grid-row: 3/4;
-        }
-
-
-        /* PROJECTS */
-
-
-        .projects__grid {
-            height: 100%;
-            grid-template-areas:
-                "web1 web1 web1 web1"
-                "web2 web2 web2 web2"
-                "web3 web3 web3 web3"
-                "web4 web4 web4 web4"
-                "web5 web5 web5 web5";
-        }
-
-
-        .projects__items:nth-of-type(1) {
-            grid-area: web1;
-        }
-
-        .projects__items:nth-of-type(2) {
-            grid-area: web2;
-        }
-
-        .projects__items:nth-of-type(3) {
-            grid-area: web3;
-        }
-
-        .projects__items:nth-of-type(4) {
-            grid-area: web4;
-        }
-
-        .projects__items:nth-of-type(5) {
-            grid-area: web5;
-        }
-
-        .projects__items:nth-of-type(6) {
-            grid-area: web6;
-        }
-
-        /* TESTIMONY */
-
-        .testimony__grid {
-            grid-template-columns: 1fr;
-            gap: 30px;
-        }
-
-        /* FOOTER */
-        .footer__grid {
-            grid-template-columns: 1fr;
-        }
-
-        .footer__contact {
-            grid-row: 1/2;
-        }
-
-
-        @media screen and (max-width: 600px) {
-            .hero__title {
-                font-size: 1.8rem;
+            /* NAV */
+            :root {
+                --boton-padding: 15px 40px;
             }
 
-            .hero__title--dev {
-                font-size: 1.5rem;
+            /* MENU HAMBURGER */
+            .nav-label {
+                display: inline-block;
+                cursor: pointer;
             }
 
-            .hero__subtitle {
-                font-size: 1.3rem;
-                font-weight: 300;
-                margin: 15px 0;
-            }
-
-        }
-
-        @media screen and (max-width: 500px) {
-            .nav {
-                flex-wrap: wrap;
+            ul {
+                display: flex;
                 justify-content: space-evenly;
-                margin-top: 10px;
+                flex-direction: column;
+                align-items: center;
+                position: fixed;
+                top: 100px;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: var(--color-black2);
+                clip-path: circle(0 at center);
+                transition: clip-path 1s ease-in-out;
+
+            }
+
+            .nav-input:checked+ul {
+                clip-path: circle(100% at center);
+            }
+
+            li a {
+                transition: 0.8s all;
+
+            }
+
+            li a:hover {
+                color: var(--color-cyan);
+
+            }
+
+            .nav {
+                justify-content: space-around;
+            }
+
+            .nav__items--cta {
+                border: none;
+                padding: 10px 15px;
+
             }
 
             .nav__items {
-                padding: 0 5px;
-                border: 0;
+                font-weight: 400;
+                border-bottom: 1px solid var(--color-cyan);
+                margin-right: 0;
+                border-radius: 0;
+            }
+
+            .nav__items--footer {
+                border: none;
+            }
+
+            /* HERO TEXTS  */
+            .hero__texts {
+                width: 100%;
+                margin-bottom: 80px;
             }
 
             .hero__title {
-                font-size: 1.0rem;
-            }
-
-            .hero__title--nombre {
-                font-size: 2rem;
-            }
-
-            .hero__title--dev {
-                font-size: 1rem;
+                font-size: 2.2rem;
             }
 
             .hero__subtitle {
-                font-size: 1.0rem;
+                font-size: 1.5rem;
                 font-weight: 300;
                 margin: 15px 0;
             }
 
-            @media screen and (max-width: 300px) {
+            /* ABOUST  */
+
+            .presentation__copy {
+                width: 100%;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+            }
+
+            .about.container {
+                padding: 10px;
+            }
+
+            .about__img--left {
+                text-align: center;
+            }
+
+            /* esta es una funcion que podemos utulizar cuando al hacer responsi la web nos puede quedar dos cajas
+    de imagenes o textos juntas, entonces con grid-row invertimos el numero de la celda!  */
+            .about__texts:last-child {
+                grid-row: 3/4;
+            }
+
+            .skills__logos {
+                width: 300px;
+            }
+
+            .skill__logo {
+                width: 60px;
+            }
+
+            /* PROJECTS */
+
+
+            .projects__grid {
+                height: 100%;
+                grid-template-areas:
+                    "web1 web1 web1 web1"
+                    "web2 web2 web2 web2"
+                    "web3 web3 web3 web3"
+                    "web4 web4 web4 web4"
+                    "web5 web5 web5 web5";
+            }
+
+
+            .projects__items:nth-of-type(1) {
+                grid-area: web1;
+            }
+
+            .projects__items:nth-of-type(2) {
+                grid-area: web2;
+            }
+
+            .projects__items:nth-of-type(3) {
+                grid-area: web3;
+            }
+
+            .projects__items:nth-of-type(4) {
+                grid-area: web4;
+            }
+
+            .projects__items:nth-of-type(5) {
+                grid-area: web5;
+            }
+
+            .projects__items:nth-of-type(6) {
+                grid-area: web6;
+            }
+
+            /* TESTIMONY */
+
+            .testimony__grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            /* FOOTER */
+            .footer__grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer__contact {
+                grid-row: 1/2;
+            }
+
+
+            @media screen and (max-width: 600px) {
                 .hero__title {
-                    font-size: 1.3rem;
+                    font-size: 1.8rem;
+                }
+
+                .hero__title--dev {
+                    font-size: 1.5rem;
                 }
 
                 .hero__subtitle {
-                    font-size: 1.0rem;
+                    font-size: 1.3rem;
                     font-weight: 300;
                     margin: 15px 0;
                 }
 
-            }
+                .skills__logos {
+                    width: 250px;
+                }
 
+                .skill__logo {
+                    width: 55px;
+                    height: 45px;
+                }
+
+
+
+                @media screen and (max-width: 500px) {
+                    .nav {
+                        flex-wrap: wrap;
+                        justify-content: space-evenly;
+                        margin-top: 10px;
+                    }
+
+                    .nav__items {
+                        padding: 0 5px;
+                        border: 0;
+                    }
+
+                    .hero__title {
+                        font-size: 1.0rem;
+                    }
+
+                    .hero__title--nombre {
+                        font-size: 2rem;
+                    }
+
+                    .hero__title--dev {
+                        font-size: 1rem;
+                    }
+
+                    .hero__subtitle {
+                        font-size: 1.0rem;
+                        font-weight: 300;
+                        margin: 15px 0;
+                    }
+
+                    .skills__logos {
+                        width: 190px;
+                        margin: auto;
+                    }
+
+                    .skill__logo {
+                        width: 35px;
+                        height: 25px;
+                    }
+
+                    @media screen and (max-width: 300px) {
+                        .hero__title {
+                            font-size: 1.3rem;
+                        }
+
+                        .hero__subtitle {
+                            font-size: 1.0rem;
+                            font-weight: 300;
+                            margin: 15px 0;
+
+                        }
+
+                        .skills__logos {
+                            width: 150px;
+                            margin: auto;
+                        }
+
+                        .skill__logo {
+                            width: 40px;
+                            height: 20px;
+                        }
+
+                    }
+
+                }
+            }
         }
     }
 }
