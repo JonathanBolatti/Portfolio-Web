@@ -642,29 +642,27 @@ nav.nav--footer {
     font-weight: 300;
     justify-content: flex-start;
     padding: auto 20px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     background-color: var(--color-black1);
 }
 
-.nav--footer ul {
+.footer__links {
     text-align: center;
     padding: 0;
+    /* display: inline-block; */
 }
 
-.nav--footer li {
-    padding: 10px 5px 0;
-}
-
-.nav--footer p {
+.footer__links p {
     text-align: center;
     margin: 0px auto 20px;
     padding: 0;
     font-weight: 400;
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
-.nav--footer ul li a {
+.footer__links a {
+    padding: 10px 5px 0;
     display: inline-block;
     align-items: center;
     color: var(--color-white);
@@ -674,9 +672,10 @@ nav.nav--footer {
     margin-bottom: 10px;
     padding: 0;
     transition: all .3s ease-in-out;
+    text-decoration: none;
 }
 
-.nav--footer ul li a:hover {
+.footer__links a:hover {
     color: #fff;
     text-shadow: 0 0 7px #03f7ff, 0 0 10px #03f7ff;
 
@@ -685,7 +684,7 @@ nav.nav--footer {
 .footer__grid {
     display: grid;
     /* es la proporcion con la que queremos que se divida la "caja" */
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 1fr 1fr 2fr;
     gap: 20px;
     align-items: center;
 }
@@ -772,6 +771,19 @@ nav.nav--footer {
     }
 
     @media screen and (max-width: 1100px) {
+
+        nav.nav--footer {
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            margin-top: 15px;
+            margin-left: 0%;
+        }
+
+        nav a.nav__items {
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
 
         .skills__logos {
             width: 250px;
@@ -863,7 +875,7 @@ nav.nav--footer {
                 margin: 15px 0;
             }
 
-            /* ABOUST  */
+            /* ABOUTS  */
 
             .presentation__copy {
                 width: 100%;
@@ -974,6 +986,10 @@ nav.nav--footer {
                     height: 45px;
                 }
 
+                /* footer */
+                nav.nav--footer {
+                    flex-direction: row;
+                }
 
 
                 @media screen and (max-width: 500px) {
@@ -1016,6 +1032,13 @@ nav.nav--footer {
                         height: 25px;
                     }
 
+                    /* footer */
+                    nav.nav--footer {
+                        margin-top: 10px;
+                        flex-direction: column;
+                    }
+
+
                     @media screen and (max-width: 300px) {
                         .hero__title {
                             font-size: 1.3rem;
@@ -1036,6 +1059,15 @@ nav.nav--footer {
                         .skill__logo {
                             width: 40px;
                             height: 20px;
+                        }
+
+                        /* footer */
+                        nav.nav--footer {
+                            margin-top: 0;
+                        }
+                        .developer-from p{
+                            font-size: 0.8rem;
+
                         }
 
                     }
