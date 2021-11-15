@@ -834,7 +834,7 @@ nav.nav--footer {
                 width: 100%;
                 background-color: var(--color-black2);
                 clip-path: circle(0 at center);
-                transition: clip-path 1s ease-in-out;
+                transition: clip-path 0.5s ease-in-out;
 
             }
 
@@ -1091,8 +1091,8 @@ nav.nav--footer {
 
                     /* Edducacion It */
                     .testimony__img {
-                        min-width: 70px;
-                        height: 70px;
+                        min-width: 100px;
+                        height: 100px;
                         margin-right: 15px;
                     }
                     .testimony__name {
