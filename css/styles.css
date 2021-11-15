@@ -168,7 +168,7 @@ ul li a {
 }
 
 .hero__texts {
-    width: 90%;
+    width: 100%;
     margin-bottom: 80px;
     font-family: 'Londrina Outline', cursive;
 
@@ -246,7 +246,6 @@ ul li a {
 .hero__cta {
 
     margin-left: 20px;
-    margin-top: 15px;
     padding: var(--boton-padding);
     text-decoration: none;
     align-items: center;
@@ -643,7 +642,7 @@ nav.nav--footer {
     font-weight: 300;
     justify-content: flex-start;
     padding: auto 20px;
-    /* margin-left: 20px; */
+    margin-left: 20px;
     background-color: var(--color-black1);
 }
 
@@ -773,8 +772,18 @@ nav.nav--footer {
 
     @media screen and (max-width: 1100px) {
 
+        /* hero texts */
+
+        .hero__title--nombre {
+            font-size: 3.5rem;
+        }
+
+        .hero__symbol-llave {
+            font-size: 3.5rem;
+        }
+
         .testimony__grid {
-          
+
             grid-template-columns: 1fr;
         }
 
@@ -803,6 +812,8 @@ nav.nav--footer {
         }
 
         @media screen and (max-width: 800px) {
+
+
 
 
             /* MENU HAMBURGER */
@@ -863,14 +874,33 @@ nav.nav--footer {
             }
 
             /* HERO TEXTS  */
+
+            .hero {
+                height: 70vh;
+            }
+
+            .hero__container {
+                height: calc(50vh + 70px);
+            }
+
             .hero__texts {
                 width: 100%;
                 margin-bottom: 80px;
             }
 
             .hero__title {
-                font-size: 2.2rem;
+                font-size: 1.9rem;
             }
+
+            .hero__title--nombre {
+                font-size: 2.5rem;
+                margin-left: 0;
+            }
+
+            .hero__symbol-llave {
+                font-size: 3.5rem;
+            }
+
 
             .hero__subtitle {
                 font-size: 1.5rem;
@@ -895,7 +925,8 @@ nav.nav--footer {
             .about__img--left {
                 text-align: center;
             }
-            .about--h2{
+
+            .about--h2 {
                 margin-top: 40px;
             }
 
@@ -969,9 +1000,24 @@ nav.nav--footer {
 
 
             @media screen and (max-width: 600px) {
+
                 .hero__title {
-                    font-size: 1.8rem;
+                    font-size: 1.5rem;
                 }
+
+                .hero__title--nombre {
+                    font-size: 2rem;
+                }
+
+                .hero__symbol-llave {
+                    font-size: 2.5rem;
+                    margin-left: 0;
+                }
+
+                .hero__lem {
+                    font-size: 1rem;
+                }
+
 
                 .hero__title--dev {
                     font-size: 1.5rem;
@@ -1011,15 +1057,20 @@ nav.nav--footer {
                     }
 
                     .hero__title {
-                        font-size: 1.0rem;
+                        font-size: 1.8rem;
                     }
 
                     .hero__title--nombre {
                         font-size: 2rem;
                     }
 
+                    span.hero__title--nombre::before {
+                        content: '\A';
+                        white-space: pre;
+                    }
+
                     .hero__title--dev {
-                        font-size: 1rem;
+                        font-size: 1.5rem;
                     }
 
                     .hero__subtitle {
@@ -1038,6 +1089,19 @@ nav.nav--footer {
                         height: 25px;
                     }
 
+                    /* Edducacion It */
+                    .testimony__img {
+                        min-width: 70px;
+                        height: 70px;
+                        margin-right: 15px;
+                    }
+                    .testimony__name {
+                        font-size: 1rem;
+                    }
+                    .testimony__verification {
+                        font-size: 10px;
+                    }
+
                     /* footer */
                     nav.nav--footer {
                         margin-top: 10px;
@@ -1050,11 +1114,18 @@ nav.nav--footer {
                             font-size: 1.3rem;
                         }
 
+                        .hero__title--nombre {
+                            font-size: 1.5rem;
+                        }
+
                         .hero__subtitle {
                             font-size: 1.0rem;
                             font-weight: 300;
                             margin: 15px 0;
+                        }
 
+                        .hero__lem {
+                            font-size: 0.8rem;
                         }
 
                         .skills__logos {
@@ -1067,11 +1138,28 @@ nav.nav--footer {
                             height: 20px;
                         }
 
+                        /* Educacion It */
+
+                        .testimony__name {
+                            font-size: 1rem;
+                        }
+
+                        .testimony__img {
+                            min-width: 60px;
+                            height: 60px;
+                            margin-right: 15px;
+                        }
+
+                        .testimony__verification {
+                            font-size: 10px;
+                        }
+
                         /* footer */
                         nav.nav--footer {
                             margin-top: 0;
                         }
-                        .developer-from p{
+
+                        .developer-from p {
                             font-size: 0.8rem;
 
                         }
