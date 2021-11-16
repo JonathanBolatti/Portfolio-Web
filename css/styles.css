@@ -623,6 +623,46 @@ dando como un efecto de tipo collage */
     margin-bottom: 10px;
 }
 
+.readMore_btn {
+    align-items: center;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 10px;
+    border: 2px solid;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: .75rem;
+    font-weight: 700;
+    height: 2.5rem;
+    justify-content: center;
+    padding: 15px 60px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    margin-left: 10px;
+}
+
+.btn--read-more {
+    line-height: 1.5;
+    border-color: #d21bc3;
+    color: #d21bc3;
+    margin: 0 10px 10px;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.btn--read-more:hover {
+    background-color: rgba(255, 255, 255, .2);
+    color: #fff;
+    text-shadow: 0 0 7px #d21bc3, 0 0 10px #d21bc3;
+}
+
+.readMore_btn{
+    display: none;
+}
+
+
 
 /* FOOTER */
 
@@ -809,6 +849,26 @@ nav.nav--footer {
         .skill__logo {
             width: 50px;
             height: 45px;
+        }
+
+        .readMore_btn{
+            display: flex;
+        }
+
+
+        .hide {
+            display: none;
+        }
+        
+        .hideTwo {
+            display: none;
+        }
+        
+        .show {
+            display: block;
+        }
+        .showTwo {
+            display: block;
         }
 
         @media screen and (max-width: 800px) {
@@ -1095,9 +1155,11 @@ nav.nav--footer {
                         height: 100px;
                         margin-right: 15px;
                     }
+
                     .testimony__name {
                         font-size: 1rem;
                     }
+
                     .testimony__verification {
                         font-size: 10px;
                     }
