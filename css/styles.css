@@ -417,9 +417,6 @@ ul li a {
 
 }
 
-
-
-
 .about__paragraph {
     margin-bottom: 20px;
     /* propiedad para separar lineas de texto */
@@ -662,6 +659,156 @@ dando como un efecto de tipo collage */
     display: none;
 }
 
+/* FORMULARIO DE CONTACTO */
+
+.form-contac {
+    background-image: url(../assets/background-form.png);
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contac-box{
+    width: 400px;
+    height: 90vh;
+    padding: 20px 30px;
+    background-color: var(--color-black2);
+    border-radius: 12px;
+    border: 1px solid  var(--color-cyan);
+    box-shadow: 0 0 12px 6px var(--color-cyan);
+}
+
+.cabecera-form p {
+    color: var(--color-rose);
+    text-shadow: 0 0 6px #03f7ff, 0 0 2px #03f7ff;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-img {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    left: calc(50% - 40px);
+    top: 240px;
+}
+
+
+.contac-box .grupo {
+    position: relative;
+    margin: 40px;
+}
+
+.form-control{
+    width: 100%;
+    height: 200px;
+    background-color: var(--color-black2);
+    color: var(--color-white);
+    font-size: 14px;
+    padding: 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: 2px solid var(--color-cyan) ;
+    outline: none;
+   border-radius: 8px;
+}
+
+.grupo-box{
+    position: relative;
+    margin: 5px 40px;
+}
+
+.buttons-contac{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: -20px;
+}
+
+.grupo-buttons{
+    position: relative;
+    margin: 5px 40px;
+}
+
+
+.input {
+    background: none;
+    color: var(--color-white);
+    font-size: 1rem;
+    padding: 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--color-cyan);
+}
+
+.input:focus {
+    /* quita el recuadro donde va el input */
+    outline: none;
+    color: var(--color-white);
+}
+
+.label {
+    color: var(--color-rose);
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.7s ease all;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+/* input:valid para que no se superpongan los textos del label */
+input:focus~label,
+input:valid~label {
+    top: -15px;
+    font-size: 12px;
+    color: var(--color-rose);
+}
+
+.barra {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+/* efecto de barra cargando del label */
+.barra::before {
+    content: "";
+    height: 2px;
+    width: 0%;
+    bottom: 0%;
+    position: absolute;
+    background-image: linear-gradient(90deg, #131312 0%, #d21bc3 69%, #fc00ff 100%);
+    transition: 0.5s ease width;
+    left: 0%;
+}
+
+.input:focus~.barra::before {
+    width: 100%;
+}
+
+.button-send{
+    background: var(--color-cyan);
+    background-image: linear-gradient(90deg, #12121269 0%, #d21bc3 90%, #fc00ff 100%);
+    border: none;
+    display: block;
+    width: 45%;
+    margin: 10px auto 10px;
+    color: #ffff;
+    height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+
+}
+
 
 
 /* FOOTER */
@@ -873,9 +1020,6 @@ nav.nav--footer {
 
         @media screen and (max-width: 800px) {
 
-
-
-
             /* MENU HAMBURGER */
             .nav-label {
                 display: inline-block;
@@ -936,7 +1080,7 @@ nav.nav--footer {
             /* HERO TEXTS  */
 
             .hero {
-                height: 70vh;
+                height: 80vh;
             }
 
             .hero__container {
