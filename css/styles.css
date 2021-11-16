@@ -655,7 +655,7 @@ dando como un efecto de tipo collage */
     text-shadow: 0 0 7px #d21bc3, 0 0 10px #d21bc3;
 }
 
-.readMore_btn{
+.readMore_btn {
     display: none;
 }
 
@@ -670,13 +670,13 @@ dando como un efecto de tipo collage */
     justify-content: center;
 }
 
-.contac-box{
+.contac-box {
     width: 400px;
     height: 90vh;
     padding: 20px 30px;
     background-color: var(--color-black2);
     border-radius: 12px;
-    border: 1px solid  var(--color-cyan);
+    border: 1px solid var(--color-cyan);
     box-shadow: 0 0 12px 6px var(--color-cyan);
 }
 
@@ -703,7 +703,7 @@ dando como un efecto de tipo collage */
     margin: 40px;
 }
 
-.form-control{
+.form-control {
     width: 100%;
     height: 200px;
     background-color: var(--color-black2);
@@ -712,23 +712,23 @@ dando como un efecto de tipo collage */
     padding: 10px 10px 5px;
     display: block;
     width: 100%;
-    border: 2px solid var(--color-cyan) ;
+    border: 2px solid var(--color-cyan);
     outline: none;
-   border-radius: 8px;
+    border-radius: 8px;
 }
 
-.grupo-box{
+.grupo-box {
     position: relative;
     margin: 5px 40px;
 }
 
-.buttons-contac{
+.buttons-contac {
     display: flex;
     justify-content: space-evenly;
     margin-bottom: -20px;
 }
 
-.grupo-buttons{
+.grupo-buttons {
     position: relative;
     margin: 5px 40px;
 }
@@ -793,7 +793,7 @@ input:valid~label {
     width: 100%;
 }
 
-.button-send{
+.button-send {
     background: var(--color-cyan);
     background-image: linear-gradient(90deg, #12121269 0%, #d21bc3 90%, #fc00ff 100%);
     border: none;
@@ -998,7 +998,7 @@ nav.nav--footer {
             height: 45px;
         }
 
-        .readMore_btn{
+        .readMore_btn {
             display: flex;
         }
 
@@ -1006,14 +1006,15 @@ nav.nav--footer {
         .hide {
             display: none;
         }
-        
+
         .hideTwo {
             display: none;
         }
-        
+
         .show {
             display: block;
         }
+
         .showTwo {
             display: block;
         }
@@ -1080,7 +1081,7 @@ nav.nav--footer {
             /* HERO TEXTS  */
 
             .hero {
-                height: 80vh;
+                height: 100vh;
             }
 
             .hero__container {
@@ -1306,6 +1307,28 @@ nav.nav--footer {
 
                     .testimony__verification {
                         font-size: 10px;
+                    }
+
+                    /* Form */
+                    .form-contac {
+                        width: 80%;
+                        height: 80vh;
+                        margin: 0 auto;
+                    }
+
+                    .contac-box {
+                        width: 250px;
+                        height: 0%;
+                        padding: 20px 0;
+                        margin: auto 0;
+                    }
+
+                    .contac-box .grupo {
+                        margin: 40px 20px;
+                    }
+
+                    .grupo-box {
+                        margin: 5px 20px;
                     }
 
                     /* footer */
