@@ -175,6 +175,7 @@ ul li a {
 }
 
 .hero__title--bienvenidos {
+   
     font-size: 3.5rem;
     height: 100%;
     line-height: 1.5em;
@@ -1118,11 +1119,6 @@ nav.nav--footer {
             }
 
 
-            .hero__subtitle {
-                font-size: 1.5rem;
-                font-weight: 300;
-                margin: 15px 0;
-            }
 
             /* ABOUTS  */
 
@@ -1221,12 +1217,29 @@ nav.nav--footer {
                     height: calc(100vh - 70px);
                 }
 
+                .hero__title--bienvenidos{
+                    position: relative;
+                    bottom: 40px;
+                }
+
                 .hero__title {
-                    font-size: 1.5rem;
+                    font-size: 2.5rem;
                 }
 
                 .hero__title--nombre {
-                    font-size: 2rem;
+                    font-size: 3.5rem;
+                }
+                .hero__title--dev {
+                    font-size: 2.5rem;
+                    line-height: 1.5;
+                }
+                .hero__lem {
+                    font-size: 1.5rem;
+                }
+                
+                span.hero__title--nombre::before {
+                    content: '\A';
+                    white-space: pre;
                 }
 
                 .hero__symbol-llave {
@@ -1234,19 +1247,8 @@ nav.nav--footer {
                     margin-left: 0;
                 }
 
-                .hero__lem {
-                    font-size: 1rem;
-                }
-
-
-                .hero__title--dev {
-                    font-size: 1.5rem;
-                }
-
-                .hero__subtitle {
-                    font-size: 1.3rem;
-                    font-weight: 300;
-                    margin: 15px 0;
+                .div{
+                    margin-top: 100px;
                 }
 
                 .skills__logos {
@@ -1292,16 +1294,11 @@ nav.nav--footer {
 
                     .hero__title--dev {
                         font-size: 2.5rem;
+                        line-height: 1.5;
                     }
-
-                    .hero__subtitle {
-                        font-size: 1.0rem;
-                        font-weight: 300;
-                        margin: 15px 0;
-                    }
-
+                   
                     .hero__lem{
-                        font-size: 1.5rem;
+                        font-size: 1.2rem;
                     }
 
                     .skills__logos {
@@ -1333,7 +1330,7 @@ nav.nav--footer {
                     .form-contac {
                         width: 100%;
                         height: 100vh;
-                        /* margin: 100px auto; */
+                        margin: 100px auto;
                     }
 
                     .contac-box {
@@ -1359,18 +1356,21 @@ nav.nav--footer {
 
 
                     @media screen and (max-width: 400px) {
+                       
+
+                        .hero__title--bienvenidos{
+                            font-size: 3rem;
+                        }
+                       
                         .hero__title {
-                            font-size: 1.3rem;
+                            font-size: 2rem;
                         }
 
                         .hero__title--nombre {
-                            font-size: 1.5rem;
+                            font-size: 2rem;
                         }
-
-                        .hero__subtitle {
-                            font-size: 1.0rem;
-                            font-weight: 300;
-                            margin: 15px 0;
+                        .hero__title--dev {
+                            font-size: 2rem;
                         }
 
                         .hero__lem {
