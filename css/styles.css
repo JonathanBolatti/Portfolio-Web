@@ -1316,16 +1316,16 @@ nav.nav--footer {
 
                     /* Form */
                     .form-contac {
-                        width: 80%;
+                        width: 100%;
                         height: 80vh;
-                        margin: 100px auto;
+                        margin: 50px auto;
                     }
 
                     .contac-box {
-                        width: 250px;
+                        width: 350px;
                         height: 0%;
                         padding: 20px 0;
-                        margin: auto 0;
+                        margin: 100px 0;
                     }
 
                     .contac-box .grupo {
@@ -1343,7 +1343,7 @@ nav.nav--footer {
                     }
 
 
-                    @media screen and (max-width: 300px) {
+                    @media screen and (max-width: 400hpx) {
                         .hero__title {
                             font-size: 1.3rem;
                         }
