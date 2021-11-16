@@ -668,11 +668,16 @@ dando como un efecto de tipo collage */
     display: flex;
     align-items: center;
     justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+    position: relative;
 }
 
 .contac-box {
     width: 400px;
-    height: 90vh;
+  
     padding: 20px 30px;
     background-color: var(--color-black2);
     border-radius: 12px;
@@ -1313,7 +1318,7 @@ nav.nav--footer {
                     .form-contac {
                         width: 80%;
                         height: 80vh;
-                        margin: 0 auto;
+                        margin: 100px auto;
                     }
 
                     .contac-box {
