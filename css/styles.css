@@ -132,6 +132,7 @@ ul li a {
     color: var(--color-white);
     border-radius: 6px;
     padding: 10px 40px;
+    
 }
 
 .nav__items {
@@ -450,9 +451,6 @@ ul li i.list-icon {
 .projects-h2 {
     color: var(--color-yellow);
 }
-
-/* en esta opcion comentada podemos armar nuestra tabla para que las imagenes ocupen diferentes tamaños
-dando como un efecto de tipo collage */
 
 .projects__grid {
     display: grid;
@@ -815,7 +813,43 @@ input:valid~label {
 
 }
 
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 30px auto 0;
+    border-radius: 8px;
+}
 
+#status.success{
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border: solid 2px #badbcc;
+    animation: status 7s ease forwards;
+}
+
+#status.error{
+    background-color: #f8d7da;
+    border: solid 2px #f5c2c7;
+    color: #842029;
+    animation: status 7s ease forwards;
+}
+
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+   }
+   90%{
+       opacity: 1;
+       pointer-events: all;
+   }
+   100%{
+       opacity: 0;
+       pointer-events: none;
+   }
+}
 
 /* FOOTER */
 
