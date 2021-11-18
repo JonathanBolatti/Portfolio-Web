@@ -100,7 +100,7 @@ figure {
 }
 
 nav figure img {
-   width: 70px;
+    width: 70px;
     margin-left: 20px;
     border: 1px solid;
     border-radius: 12px;
@@ -134,7 +134,7 @@ ul li a {
     color: var(--color-white);
     border-radius: 6px;
     padding: 10px 40px;
-    
+
 }
 
 .nav__items {
@@ -178,7 +178,7 @@ ul li a {
 }
 
 .hero__title--bienvenidos {
-   
+
     font-size: 3.5rem;
     height: 100%;
     line-height: 1.5em;
@@ -815,7 +815,7 @@ input:valid~label {
 
 }
 
-#status{
+#status {
     width: 90%;
     max-width: 500px;
     text-align: center;
@@ -824,33 +824,35 @@ input:valid~label {
     border-radius: 8px;
 }
 
-#status.success{
+#status.success {
     color: #0f5132;
     background-color: #d1e7dd;
     border: solid 2px #badbcc;
     animation: status 7s ease forwards;
 }
 
-#status.error{
+#status.error {
     background-color: #f8d7da;
     border: solid 2px #f5c2c7;
     color: #842029;
     animation: status 7s ease forwards;
 }
 
-@keyframes status{
-    0%{
+@keyframes status {
+    0% {
         opacity: 1;
         pointer-events: all;
-   }
-   90%{
-       opacity: 1;
-       pointer-events: all;
-   }
-   100%{
-       opacity: 0;
-       pointer-events: none;
-   }
+    }
+
+    90% {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    100% {
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 
 /* FOOTER */
@@ -1121,7 +1123,7 @@ nav.nav--footer {
                 margin-right: 0;
                 border-radius: 0;
                 border-bottom: 1px solid var(--color-cyan);
-                
+
             }
 
             .nav__items--footer {
@@ -1255,7 +1257,7 @@ nav.nav--footer {
                     height: calc(100vh - 70px);
                 }
 
-                .hero__title--bienvenidos{
+                .hero__title--bienvenidos {
                     position: relative;
                     bottom: 40px;
                 }
@@ -1267,14 +1269,16 @@ nav.nav--footer {
                 .hero__title--nombre {
                     font-size: 3.5rem;
                 }
+
                 .hero__title--dev {
                     font-size: 2.5rem;
                     line-height: 1.5;
                 }
+
                 .hero__lem {
                     font-size: 1.5rem;
                 }
-                
+
                 span.hero__title--nombre::before {
                     content: '\A';
                     white-space: pre;
@@ -1285,7 +1289,7 @@ nav.nav--footer {
                     margin-left: 0;
                 }
 
-                .div{
+                .div {
                     margin-top: 100px;
                 }
 
@@ -1315,7 +1319,7 @@ nav.nav--footer {
                         padding: 0 5px;
                         border: 0;
                         border-bottom: 1px solid var(--color-cyan);
-                        
+
                     }
 
                     .hero__title {
@@ -1336,8 +1340,8 @@ nav.nav--footer {
                         font-size: 2.5rem;
                         line-height: 1.5;
                     }
-                   
-                    .hero__lem{
+
+                    .hero__lem {
                         font-size: 1.2rem;
                     }
 
@@ -1367,21 +1371,20 @@ nav.nav--footer {
                     }
 
                     /* Form */
+
+
                     .form-contac {
-                        width: 100%;
-                        /* height: 80vh; */
-                        /* margin: 100px auto; */
+                        min-height: 150vh;
                     }
 
-                    .form-contac form{
+                    .form-contac form {
                         display: flex;
                         width: 85%;
+                        z-index: 999;
                     }
 
                     .contac-box {
-                        height: 0%;
                         padding: 10px;
-                        /* margin: 100px 0; */
                     }
 
                     .contac-box .grupo {
@@ -1403,12 +1406,12 @@ nav.nav--footer {
                     }
 
                     @media screen and (max-width: 400px) {
-                       
 
-                        .hero__title--bienvenidos{
+
+                        .hero__title--bienvenidos {
                             font-size: 3rem;
                         }
-                       
+
                         .hero__title {
                             font-size: 2rem;
                         }
@@ -1416,6 +1419,7 @@ nav.nav--footer {
                         .hero__title--nombre {
                             font-size: 2rem;
                         }
+
                         .hero__title--dev {
                             font-size: 2rem;
                         }
@@ -1451,12 +1455,9 @@ nav.nav--footer {
                         }
 
                         /* Form */
-                       
-                        .contac-box {
-                            width: 250px;
-                          
-                        }
 
+
+                        
                         /* footer */
                         nav.nav--footer {
                             margin-top: 0;
